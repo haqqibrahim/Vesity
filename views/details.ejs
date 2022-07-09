@@ -1,0 +1,16 @@
+<h1>DETAILS FOR <%= estate.name %></h1>
+<div>
+  <img
+    src="data:image/<%= estate.image.contentType %>;base64,<%= estate.image.data.toString('base64') %>"
+    alt="<%= estate.name %>"
+  />
+  <p><%= estate.name %></p>
+  <p><%= estate.address %></p>
+  <p><%= estate.price %></p>
+  <p><%= estate.numberOfInvestors %></p>
+  <form action="/details/<%= estate.name %>" method="post">
+    <input type="number" name="unit" id="">
+    <input type="submit" value="Buy">
+  </form>
+  <p>The price is: </p>
+</div>

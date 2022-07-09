@@ -1,0 +1,17 @@
+<h2>FULLNAME: <%= fullname %></h2>
+<h2>OWNED RESIDENCE: <%= ownedResidence %></h2>
+<h2>RESIDENCE WORTH: <%= residenceWorth %></h2>
+<h2>TOTAL UNIT: <%= totalUnit %></h2>
+
+<% estates.forEach(estate => { %>
+<div>
+  <img
+    src="data:image/<%= estate.image.contentType %>;base64,<%= estate.image.data.toString('base64') %>"
+    alt="<%= estate.name %>"
+  />
+  <p><%= estate.name %></p>
+  <p><%= estate.address %></p>
+  <p><%= estate.price %></p>
+  <p><%= estate.numberOfInvestors %></p>
+</div>
+<% }) %>

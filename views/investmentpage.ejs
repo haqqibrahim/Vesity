@@ -1,0 +1,19 @@
+<h1>Investment Page</h1>
+<a href="/estate"><button>ESTATE</button></a>
+<a href="/account"><button>ACCOUNT</button></a>
+<a href="/logout"><button>LOGOUT</button></a>
+
+<!-- GET ALL ESTATE FROM DATABASE -->
+<% estates.forEach(estate => { %>
+<div>
+  <img
+    src="data:image/<%= estate.image.contentType %>;base64,<%= estate.image.data.toString('base64') %>"
+    alt="<%= estate.name %>"
+  />
+  <p><%= estate.name %></p>
+  <p><%= estate.address %></p>
+  <p><%= estate.price %></p>
+  <p><%= estate.numberOfInvestors %></p>
+  <a href="/details/<%= estate.name %> "><button><%= estate.name %> </button></a>
+</div>
+<% }) %>
