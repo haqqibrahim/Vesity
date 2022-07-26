@@ -1,17 +1,97 @@
-<h2>FULLNAME: <%= fullname %></h2>
-<h2>OWNED RESIDENCE: <%= ownedResidence %></h2>
-<h2>RESIDENCE WORTH: <%= residenceWorth %></h2>
-<h2>TOTAL UNIT: <%= totalUnit %></h2>
+<!DOCTYPE html>
+<html lang="en">
 
-<% estates.forEach(estate => { %>
-<div>
-  <img
-    src="data:image/<%= estate.image.contentType %>;base64,<%= estate.image.data.toString('base64') %>"
-    alt="<%= estate.name %>"
-  />
-  <p><%= estate.name %></p>
-  <p><%= estate.address %></p>
-  <p><%= estate.price %></p>
-  <p><%= estate.numberOfInvestors %></p>
-</div>
-<% }) %>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/investment3.css">
+    <link rel="stylesheet" href="Circular Std Font.otf">
+    <title>Vesity</title>
+</head>
+
+<body>
+    <div class="main">
+        <h3 class="ves">VESITY</h3>
+        <p class="circle"></p>
+        <a class="ba" href="/investmentpage">Back</a>
+        <h1 class="intext">J</h1>
+        <h2 class="jb"><%= fullname %></h2>
+        <h4 class="or">Owned Residences</h4>
+        <h4 class="orn"> <%= ownedResidence %></h4>
+        <h4 class="tu">Total units</h4>
+        <h4 class="tun"> <%= totalUnit %></h4>
+        <h4 class="rw">Residence worth</h4>
+        <h4 class="rwn">N<%= residenceWorth %></h4>
+        <h2 class="ow">OWNED RESIDENCES</h2>
+        <div class="Abox">
+            <img class="apic" src="/image/Rectangle 24.png" alt="">
+            <h4 class="bp">Bean Plot</h4>
+            <h5 class="lc">36 Stave Road, Lagos</h5>
+            <h5 class="una">units</h5>
+            <h5 class="unna">10</h5>
+            <h5 class="inva">Investors</h5>
+            <h5 class="N">N500,000</h5>
+            <h5 class="n">320</h5>
+        </div>
+        <!-- <div class="Bbox">
+            <img class="bpic" src="/image/Rectangle 27.png" alt="">
+            <h4 class="qp">Quanly Plot</h4>
+            <h5 class="lca">3 Area 2 Road, Abuja</h5>
+            <h5 class="unb">units</h5>
+            <h5 class="unnb">10</h5>
+            <h5 class="invb">Investors</h5>
+            <h5 class="Na">N20,000</h5>
+            <h5 class="na">90</h5>
+        </div> -->
+        <!-- <div class="Cbox">
+            <img class="cpic" src="/image/Rectangle 27.png" alt="">
+            <h4 class="qpa">Quanly Plot</h4>
+            <h5 class="lcb">3 Area 2 Road, Abuja</h5>
+            <h5 class="unc">units</h5>
+            <h5 class="unnc">5</h5>
+            <h5 class="invc">Investors</h5>
+            <h5 class="Nb">N100,000</h5>
+            <h5 class="nb">90</h5>
+        </div>
+        <div class="Cbox">
+            <img class="cpic" src="/image/Rectangle 27.png" alt="">
+            <h4 class="qpa">Quanly Plot</h4>
+            <h5 class="lcb">3 Area 2 Road, Abuja</h5>
+            <h5 class="unc">units</h5>
+            <h5 class="unnc">5</h5>
+            <h5 class="invc">Investors</h5>
+            <h5 class="Nb">N100,000</h5>
+            <h5 class="nb">90</h5>
+        </div>
+        <div class="Dbox">
+            <img class="dpic" src="/image/Rectangle 27.png" alt="">
+            <h4 class="qpb">Bean Plot</h4>
+            <h5 class="lcc">36 Stave Road, Lagos</h5>
+            <h5 class="und">units</h5>
+            <h5 class="unnd">10</h5>
+            <h5 class="invd">Investors</h5>
+            <h5 class="Nc">N100,000</h5>
+            <h5 class="nc">320</h5>
+        </div>
+        <div class="Ebox">
+            <img class="Epic" src="/image/Rectangle 27.png" alt="">
+            <h4 class="qpc">Bean Plot</h4>
+            <h5 class="lcd">36 Stave Road, Lagos</h5>
+            <h5 class="une">units</h5>
+            <h5 class="unne">10</h5>
+            <h5 class="inve">Investors</h5>
+            <h5 class="Nd">N100,000</h5>
+            <h5 class="nd">320</h5>
+        </div> -->
+        <p class="rect"></p>
+        <h2 class="vest">VESITY</h2>
+        <p class="line"></p>
+        <img class="vec1" src="/image/Vector1.png" alt="">
+        <img class="vec2" src="/image/ig.png" alt="">
+        <img class="vec3" src="/image/tw.png" alt="">
+    </div>
+    </div>
+
+</body>
+</html>

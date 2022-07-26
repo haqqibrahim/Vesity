@@ -1,0 +1,411 @@
+.amain {
+    position: relative;
+    width: 1512px;
+    height: 1033px;
+    background: #ffffff;
+}
+
+.ty {
+    position: absolute;
+    width: 109px;
+    height: 24px;
+    left: 120px;
+    top: 100px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #AF1B3F
+}
+
+.fe {
+    position: absolute;
+    width: 70px;
+    height: 23px;
+    left: 866px;
+    top: 123px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.in {
+    position: absolute;
+    width: 98px;
+    height: 23px;
+    left: 986px;
+    top: 123px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.lg {
+    box-sizing: border-box;
+    position: absolute;
+    width: 109px;
+    height: 48px;
+    left: 1106px;
+    top: 100px;
+    border: 1px solid #AF1B3F;
+    border-radius: 10px;
+}
+
+.lo {
+    position: absolute;
+    width: 70px;
+    height: 23px;
+    top: 13px;
+    right: 15px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.sg {
+    box-sizing: border-box;
+    position: absolute;
+    width: 109px;
+    height: 48px;
+    left: 1236px;
+    top: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #AF1B3F;
+    border-radius: 10px;
+}
+
+.si {
+    position: absolute;
+    width: 70px;
+    height: 23px;
+    top: 13px;
+    right: 15px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+}
+
+.ves {
+    position: absolute;
+    width: 1224px;
+    height: 466px;
+    left: 123px;
+    top: 223px;
+}
+
+.piv {
+    position: absolute;
+    width: 211px;
+    height: 65px;
+    left: 646px;
+    top: 383px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: 900px;
+    font-size: 60px;
+    line-height: 65px;
+    color: #ffffff;
+}
+
+.text {
+    position: absolute;
+    width: 696px;
+    height: 46px;
+    left: 410px;
+    top: 739px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #878787;
+}
+
+.en {
+    position: absolute;
+    width: 271px;
+    height: 56px;
+    left: 645px;
+    top: 881px;
+    background: #AF1B3F;
+    border-radius: 10px;
+}
+
+.eg {
+    position: absolute;
+    width: 271px;
+    height: 56px;
+    top: 13px;
+    right: -5px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+}
+
+.bmain {
+    position: absolute;
+    width: 1512px;
+    height: 2313px;
+    background: #FFF0F3;
+}
+
+.arec {
+    position: absolute;
+    width: 401px;
+    height: 472px;
+    left: 90px;
+    top: 80px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.aarec {
+    position: absolute;
+    top: 140px;
+    left: 135px;
+}
+
+.arec h4 {
+    position: absolute;
+    width: 271px;
+    height: 30px;
+    left: 72px;
+    top: 300px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #AF1B3F;
+}
+
+.brec {
+    position: absolute;
+    width: 401px;
+    height: 472px;
+    left: 560px;
+    top: 80px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.bbrec {
+    position: absolute;
+    top: 120px;
+    left: 135px;
+}
+
+.brec h4 {
+    position: absolute;
+    width: 271px;
+    height: 30px;
+    left: 72px;
+    top: 300px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #AF1B3F;
+}
+
+.crec {
+    position: absolute;
+    width: 401px;
+    height: 472px;
+    left: 1030px;
+    top: 80px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.ccrec {
+    position: absolute;
+    top: 120px;
+    left: 135px;
+}
+
+.crec h4 {
+    position: absolute;
+    width: 271px;
+    height: 30px;
+    left: 72px;
+    top: 300px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #AF1B3F;
+}
+
+.drec {
+    position: absolute;
+    width: 401px;
+    height: 472px;
+    left: 810px;
+    top: 600px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.ddrec {
+    position: absolute;
+    top: 120px;
+    left: 135px;
+}
+
+.drec h4 {
+    position: absolute;
+    width: 271px;
+    height: 30px;
+    left: 148px;
+    top: 300px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #AF1B3F;
+}
+
+.erec {
+    position: absolute;
+    width: 401px;
+    height: 472px;
+    left: 310px;
+    top: 600px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.eerec {
+    position: absolute;
+    top: 120px;
+    left: 135px;
+}
+
+.erec h4 {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    left: 70px;
+    top: 250px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #AF1B3F;
+}
+
+.cmain {
+    position: absolute;
+    width: 1512px;
+    height: 900px;
+    top: 1250px;
+    background: #ffffff;
+}
+
+.imga {
+    position: absolute;
+    width: 1224px;
+    height: 466px;
+    left: 148px;
+    top: 223px;
+}
+
+.piva {
+    position: absolute;
+    width: 1001px;
+    height: 65px;
+    left: 646px;
+    top: 343px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: 900px;
+    font-size: 60px;
+    line-height: 65px;
+    color: #ffffff;
+}
+
+.atext {
+    position: absolute;
+    width: 696px;
+    height: 46px;
+    left: 410px;
+    top: 500px;
+    font-family: 'Circular Std Font', sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.rect {
+    position: absolute;
+    width: 1512px;
+    height: 170px;
+    left: 0px;
+    top: 2133px;
+    background: #000000;
+}
+
+.vest {
+    position: absolute;
+    width: 109px;
+    height: 24px;
+    left: 120px;
+    top: 2226px;
+    color: #ffffff;
+}
+
+.line {
+    position: absolute;
+    width: 70px;
+    height: 0px;
+    left: 262px;
+    top: 2240px;
+    border: 1px solid #ffffff;
+    transform: rotate(90deg);
+}
+
+.vec1 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 2243px;
+    left: 320px;
+}
+
+.vec2 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 2243px;
+    left: 378px;
+}
+
+.vec3 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 2243px;
+    left: 436px;
+}

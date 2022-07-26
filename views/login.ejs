@@ -1,6 +1,30 @@
-<!-- FORM FOR LOGIN -->
-<form action="/login" method="post">
-  <input type="email" name="username" placeholder="email" />
-  <input type="password" name="password" placeholder="Password" />
-  <input type="submit" value="Login" />
-</form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <title>Vesity</title>
+
+    <link rel="stylesheet" href="Circular Std Font.otf" />
+  </head>
+
+  <body>
+    <div class="main">
+      <h2>VESITY</h2>
+      <div class="box">
+        <h2>Log in</h2>
+        <form method="post" action="/login">
+          <p class="em">Email</p>
+          <input type="email" name="username" class="abox" />
+          <p class="ps">Password</p>
+          <input type="password" name="password" class="bbox" />
+          <button type="submit" class="jw">LOG IN</button>
+        </form>
+      </div>
+      <h4 class="atext">Don't have an account?</h4>
+      <a class="sign" href="/register">Sign up</a>
+    </div>
+  </body>
+</html>

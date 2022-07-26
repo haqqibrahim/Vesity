@@ -6,10 +6,11 @@ const Estate = require("../models/Estate");
 const User = require("../models/User");
 
 // ROUTES
-Detailspage.get("/:name", (req, res) => {
+Detailspage.get("/:id", (req, res) => {
+  console.log(req.params.id);
   if (req.isAuthenticated()) {
     // GET ALL ESTATES
-    Estate.findOne({ name: req.params.name }, (err, estate) => {
+    Estate.findOne({ id: req.params.id }, (err, estate) => {
       if (err) {
         console.log(err);
       } else {
@@ -21,8 +22,8 @@ Detailspage.get("/:name", (req, res) => {
   }
 });
 
-Detailspage.post("/:name", (req, res) => {
-  Estate.findOne({ name: req.params.name }, (err, estate) => {
+Detailspage.post("/:id", (req, res) => {
+  Estate.findOne({ name: req.params.id }, (err, estate) => {
     if (err) {
       console.log(err);
     } else {

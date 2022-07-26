@@ -5,6 +5,7 @@ const passportLocalMongoose = require("passport-local-mongoose");
 
 // CREATING SCHEMA
 const EstateSchema = new Schema({
+  id: String,
   image: {
     data: Buffer,
     contentType: String,

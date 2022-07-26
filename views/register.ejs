@@ -1,14 +1,35 @@
-<!-- FORM FOR REGISTER -->
-<form action="/register" method="post">
-  <input type="text" name="fullName" placeholder="fullname" />
-  <input type="email" name="username" placeholder="email" />
-  <input type="text" name="nin" placeholder="NIN" />
-  <input type="password" name="password" placeholder="Password" />
-  <input
-    type="password"
-    name="confirmPassword"
-    placeholder="Confirm Password"
-  />
-  <button type="submit">Register</button>
-</form>
-<h1><% error %></h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/signup.css" />
+    <title>Vesity</title>
+    <link rel="stylesheet" href="Circular Std Font.otf" />
+  </head>
+
+  <body>
+    <div class="main">
+      <h2>VESITY</h2>
+      <div class="box">
+        <h2>Set up an account</h2>
+        <form action="/register" method="post">
+          <p class="fn">Full Name</p>
+          <input type="text" name="fullName" class="abox" />
+          <p class="em">Email</p>
+          <input type="email" name="username" class="bbox" />
+          <p class="ni">NIN</p>
+          <input type="text" name="nin" class="cbox" />
+          <p class="ps">Password</p>
+          <input type="password" name="password" class="dbox" />
+          <p class="cp">Confirm Password</p>
+          <input type="password" name="confirmPassword" class="ebox" />
+          <button type="submit" class="jw">PROCEED</button>
+        </form>
+      </div>
+      <h4 class="atext">Have a current account?</h4>
+      <a class="log" href="/login">Log in</a>
+    </div>
+  </body>
+</html>

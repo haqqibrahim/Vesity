@@ -46,6 +46,7 @@ if(req.isAuthenticated) {
       image: new Buffer.from(encode_img, "base64"),
     };
     const newEstate = new Estates({
+      id: req.body.id,
       image: {
         data: finalImg.image,
         contentType: finalImg.contentType,

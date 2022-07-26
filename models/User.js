@@ -9,6 +9,11 @@ const UserSchema = new Schema({
   username: String,
   nin: String,
   password: String,
+  bankDetails: {
+    bankName: String,
+    accountNumber: String,
+    accountName: String,
+  },
   ownedResidence: Number,
   totalUnit: Number,
   ResidenceWorth: Number,
@@ -23,7 +28,7 @@ const UserSchema = new Schema({
       price: String,
       unit: String,
       numberOfInvestors: String,
-      pricePaid: String
+      pricePaid: String,
     },
   ],
 });

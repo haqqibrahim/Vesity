@@ -30,7 +30,7 @@ Register.post("/", (req, res) => {
       nin: req.body.nin,
       ownedResidence: 0,
       totalUnit: 0,
-      ResidenceWorth: 0
+      ResidenceWorth: 0,
     }),
     req.body.password,
     (err, user) => {
@@ -42,12 +42,34 @@ Register.post("/", (req, res) => {
         passport.authenticate("local")(req, res, () => {
           console.log("User registered");
           console.log(user);
-          res.redirect("/investmentpage");
+          res.redirect("/register/bank");
           return;
         });
       }
     }
   );
+});
+
+Register.get("/bank", (req, res) => {
+  res.render("bank", { error: "" });
+});
+
+Register.post("/bank", (req, res) => {
+  const bankDetails = {
+    bankName: req.body.bankName,
+    accountNumber: req.body.accountNumber,
+    accountName: req.body.accountName,
+  };
+  User.findOne({ id: req.user._id }, (err, user) => {
+    if (err) {
+      console.log(err);
+      res.redirect("/register/bank");
+    } else {
+      user.bankDetails = bankDetails;
+      user.save();
+      res.redirect("/investmentpage");
+    }
+  });
 });
 
 module.exports = Register;

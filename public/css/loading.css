@@ -1,0 +1,25 @@
+.main {
+    background-color: #FFFFFF;
+    position: relative;
+    width: 1512px;
+    height: 982px;
+}
+
+.text {
+    position: absolute;
+    width: 278px;
+    height: 64px;
+    left: 617px;
+    top: 445px;
+    color: #AF1B3F;
+}
+
+.rectangle {
+    position: absolute;
+    width: 48px;
+    height: 6px;
+    left: 634px;
+    top: 500px;
+    background: #AF1B3F;
+    border-radius: 4px;
+}

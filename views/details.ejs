@@ -1,16 +1,52 @@
-<h1>DETAILS FOR <%= estate.name %></h1>
-<div>
-  <img
-    src="data:image/<%= estate.image.contentType %>;base64,<%= estate.image.data.toString('base64') %>"
-    alt="<%= estate.name %>"
-  />
-  <p><%= estate.name %></p>
-  <p><%= estate.address %></p>
-  <p><%= estate.price %></p>
-  <p><%= estate.numberOfInvestors %></p>
-  <form action="/details/<%= estate.name %>" method="post">
-    <input type="number" name="unit" id="">
-    <input type="submit" value="Buy">
-  </form>
-  <p>The price is: </p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="/css/details.css" />
+    <script src="/js/scripts.js"></script>
+    <title>Vesity</title>
+  </head>
+  <body class="back">
+    <h3 class="ves">VESITY</h3>
+    <button class="mes"><a class="mie" href="/account">My account</a></button>
+    <a href="/investmentpage"> <h4 class="chi">Back</h4> </a>
+    <img
+      class="image"
+      src="data:image/<%= estate.image.contentType %>;base64,<%= estate.image.data.toString('base64') %>"
+      alt="<%= estate.name %>"
+    />
+    <h2 class="ad"><%= estate.name %></h2>
+    <h5 class="gft"><%= estate.address %></h5>
+    <h5 class="vin">Market Value</h5>
+    <img class="cent" src="/image/Vector.png" alt="" />
+    <h5 class="som">23%</h5>
+    <h5 class="cln">Price per unit</h5>
+    <h5 class="ton"><%= estate.price %></h5>
+    <h5 class="tor">Investors</h5>
+    <h5 class="abl"><%= estate.numberOfInvestors %></h5>
+    <h5 class="line"></h5>
+    <h5 class="uni">Total units</h5>
+    <form action="/details/<%= estate.name %>" method="post">
+      <input
+        type="number"
+        name="unit"
+        id=""
+        class="forms"
+        placeholder="How many units do you want to buy?"
+      />
+      <button type="submit" class="oye">
+        <a class="bo">Buy now</a>
+      </button>
+    </form>
+
+    <h5 class="isa">Invest now to avoid selling out.</h5>
+    <br />
+    <br />
+  </body>
+</html>
