@@ -10,7 +10,7 @@ const passport = require("passport");
 const multer = require("multer");
 
 // IMPORT ROUTES
-const home = require("./routes/home");
+const home = require("../routes/home");
 const register = require("./routes/register");
 const login = require("./routes/login");
 const investmentpage = require("./routes/investmentpage");
