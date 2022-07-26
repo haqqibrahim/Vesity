@@ -10,13 +10,13 @@ const passport = require("passport");
 const multer = require("multer");
 
 // IMPORT ROUTES
-const home = require("../routes/home");
-const register = require("./routes/register");
-const login = require("./routes/login");
-const investmentpage = require("./routes/investmentpage");
-const estate = require("./routes/estate");
-const details = require("./routes/details");
-const account = require("./routes/account");
+const home = require("./Routes/home");
+const register = require("./Routes/register");
+const login = require("./Routes/login");
+const investmentpage = require("./Routes/investmentpage");
+const estate = require("./Routes/estate");
+const details = require("./Routes/details");
+const account = require("./Routes/account");
 // IMPORT DATA MODEL
 const User = require("./models/User");
 
