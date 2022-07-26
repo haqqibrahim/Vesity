@@ -52,8 +52,8 @@ mongoosee.connect(process.env.MONGO_URL, { useNewUrlParser: true }, () => {
 });
 
 // ROUTES
-app.use("/", preload);
-app.use("/home", home);
+// app.use("/", preload);
+app.use("/", home);
 app.use("/register", register);
 app.use("/login", login);
 app.use("/investmentpage", investmentpage);
