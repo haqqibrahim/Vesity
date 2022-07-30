@@ -32,13 +32,36 @@
     <h5 class="abl"><%= estate.numberOfInvestors %></h5>
     <h5 class="line"></h5>
     <h5 class="uni">Total units</h5>
-    <form action="/details/<%= estate.name %>" method="post">
+    <form action="/details/<%= estate.id %>" method="post">
       <input
         type="number"
         name="unit"
         id=""
         class="forms"
         placeholder="How many units do you want to buy?"
+      />
+      <button type="submit" class="unibtn">UNIT</button>
+    </form>
+    <form action="https://checkout.flutterwave.com/v3/hosted/pay" method="post">
+      <input
+        type="hidden"
+        name="public_key"
+        value="FLWPUBK-f10466dbd5cbf33efe366734a8f52967-X"
+      />
+      <input type="hidden" name="tx_ref" value="TX-1" />
+      <input type="hidden" name="amount" value="10" />
+      <input type="hidden" name="currency" value="NGN" />
+      <input
+        type="hidden"
+        name="redirect_url"
+        value="http://localhost:3000/investmentpage"
+      />
+      <input type="hidden" name="meta[token]" value="54" />
+      <input type="hidden" name="customer[name]" value="Ibrahim Abdulhaqq" />
+      <input
+        type="hidden"
+        name="customer[email]"
+        value="enessyibrahim@gmail.com"
       />
       <button type="submit" class="oye">
         <a class="bo">Buy now</a>
@@ -48,5 +71,6 @@
     <h5 class="isa">Invest now to avoid selling out.</h5>
     <br />
     <br />
+    
   </body>
 </html>

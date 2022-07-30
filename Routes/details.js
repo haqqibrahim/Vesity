@@ -1,6 +1,5 @@
 // IMPORT MODULES
 const express = require("express");
-
 const Detailspage = express.Router();
 const Estate = require("../models/Estate");
 const User = require("../models/User");
@@ -45,7 +44,7 @@ Detailspage.post("/:id", (req, res) => {
           user.ResidenceWorth += parseInt(req.body.unit) * estate.price;
           user.save();
           console.log("Investment made");
-          res.redirect("/investmentpage");
+         
         }
       });
     }

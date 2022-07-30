@@ -208,6 +208,17 @@
     line-height: 30px;
     color: #878787;
 }
+.unibtn {
+    position: absolute;
+    width: 112px;
+    height: 30px;
+    left: 249px;
+    top: 1020px;
+    background-color: #AF1B3F;
+    border: #000000 solid 1px;
+    border-radius: 4px;
+    color: white;
+}
 
 .na {
     position: absolute;
